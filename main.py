@@ -3,7 +3,6 @@ from curses.ascii import isalpha
 import sys
 
 def main():
-    #book = get_book_text("./books/frankenstein.txt")
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
@@ -20,13 +19,5 @@ def main():
         if item["char"].isalpha():
             print(f"{item['char']}: {item['num']}")
     print("============= END ===============")
-def get_book_text(filepath):
-    book_content = ""
-
-    with open(filepath) as f:
-        book_content = f.read()
-
-    return book_content
-
 
 main()
