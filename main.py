@@ -12,6 +12,10 @@ def main():
     num_words = get_num_words(text)
     character_count = get_char_num(text)
     sorted_count = sorted_list_dicts(character_count)
+    print_report()
+
+
+def print_report():
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_path}...")
     print("----------- Word Count ----------")
